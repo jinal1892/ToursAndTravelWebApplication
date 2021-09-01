@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    #divRegistrationBlock{
+        margin-top: 150px;
+    }
+
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button1 {
+        border-radius: 2px;
+    }
+
+    .button2 {
+        border-radius: 4px;
+    }
+
+    .button3 {
+        border-radius: 8px;
+    }
+
+    .button4 {
+        border-radius: 12px;
+    }
+
+    .button5 {
+        border-radius: 50%;
+    }
+</style>
+
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+<!-- Start Slider -->
+@Html.Partial("_RegistrationLogin")
+<div id="slides-shop" class="cover-slides">
+    <ul class="slides-container">
+        <li class="text-center">
+            <img src="~/Content/images/banner-01.jpg" alt="">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> Freshshop</strong></h1>
+                        <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                        <p>
+                            <button type="button"
+                                    class="btnShowModal btn btn-sm btn-default pull-left col-lg-3 button button4">
+                                Registration
+                            </button>
+                            <button type="button"
+                                    class="btnShowModal btn btn-sm btn-default pull-left col-lg-3 button button4">
+                                Login
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="~/Content/images/banner-02.jpg" alt="">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> Freshshop</strong></h1>
+                        <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                        <p>
+                            <button type="button"
+                                    class="btnShowModal btn btn-sm btn-default pull-left col-lg-3 button button4">
+                                Registration
+                            </button>
+                            <button type="button"
+                                    class="btnShowModal btn btn-sm btn-default pull-left col-lg-3 button button4">
+                                Login
+                            </button>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="~/Content/images/banner-03.jpg" alt="">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> Freshshop</strong></h1>
+                        <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                        <p>
+                            <button type="button"
+                                    class="btnShowModal btn btn-sm btn-default pull-left col-lg-3 button button4">
+                                Registration
+                            </button>
+                            <button type="button"
+                                    class="btnShowModal btn btn-sm btn-default pull-left col-lg-3 button button4">
+                                Login
+                            </button>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $(".btnShowModal").click(function () {
+            $("#loginModal").modal('show');
+        });
+
+        $("#btnHideModal").click(function () {
+            $("#loginModal").modal('hide');
+        });
+    });
+
+</script>
